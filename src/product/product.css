@@ -1,0 +1,63 @@
+.card {
+  max-width: 800px;
+  border-radius: 40px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__info {
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.card__title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card__origin {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card__price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1eac3f;
+}
+
+.card__button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+
+.card__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.card__button:active {
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
